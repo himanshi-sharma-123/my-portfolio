@@ -1,33 +1,34 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 function Navbar() {
-  const links = [
-    {
-      id: 1,
-      title: "Work",
-      url: "/",
-    },
-    {
-      id: 2,
-      title: "About",
-      url: "/about",
-    },
-    {
-      id: 3,
-      title: "Resume",
-      url: "/",
-    },
-  ];
+  const [nav, setNav] = useState(false);
+
   return (
-    <div>
-      <Link href="/">hs</Link>
-      <div>
-        {links.map((link) => (
-          <Link key={link.id} href={link.url}>
-            {link.title}
-          </Link>
-        ))}
+    <div className="flex flex-col md:flex-row w-full md:h-[80px] justify-between items-center px-4">
+      <div className="font-bold text-7xl font-mono mb-4 md:mb-0">
+        <Link href="/">hs</Link>
+      </div>
+      <div
+        className={`md:flex flex-col md:flex-row ${nav ? "flex" : "hidden"}`}
+      >
+        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+          Work
+        </button>
+        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+          About
+        </button>
+        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full">
+          Resume
+        </button>
+      </div>
+      <div
+        onClick={() => setNav(!nav)}
+        className="md:hidden absolute cursor-pointer right-4 z-10 mt-6"
+      >
+        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
       </div>
     </div>
   );
