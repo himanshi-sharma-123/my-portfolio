@@ -52,9 +52,12 @@ export default function Home() {
             pursuing B.Tech at GGSPIU
           </div>
           <div className="mt-10">
-            <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-4 px-6 rounded-full">
+            <Link
+              href="/"
+              className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-4 px-6 rounded-full"
+            >
               Wanna chat?
-            </button>
+            </Link>
           </div>
         </div>
       </div>

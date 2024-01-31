@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const details = [
   {
@@ -68,15 +69,24 @@ function ProjectDetail({ params }) {
       </div>
       <div>
         <h1>Links</h1>
-        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+        <Link
+          href="/"
+          className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4"
+        >
           Github
-        </button>
-        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+        </Link>
+        <Link
+          href="/"
+          className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4"
+        >
           Live Site
-        </button>
-        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+        </Link>
+        <Link
+          href="/"
+          className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4"
+        >
           Demo Video
-        </button>
+        </Link>
       </div>
       <div>
         <h1>Images</h1>

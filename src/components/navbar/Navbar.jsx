@@ -14,15 +14,24 @@ function Navbar() {
       <div
         className={`md:flex flex-col md:flex-row ${nav ? "flex" : "hidden"}`}
       >
-        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+        <Link
+          href="/"
+          className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4"
+        >
           Work
-        </button>
-        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4">
+        </Link>
+        <Link
+          href="/about"
+          className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 md:mr-4"
+        >
           About
-        </button>
-        <button className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full">
+        </Link>
+        <Link
+          href="/"
+          className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full"
+        >
           Resume
-        </button>
+        </Link>
       </div>
       <div
         onClick={() => setNav(!nav)}
