@@ -10,32 +10,31 @@ export default function Home() {
       image: "/book store.png",
       title: "Book Store",
       description:
-        "Discover the alchemy of words as you embark on a journey through‘Express Your Book Love.’ This guide unveils the art of crafting heartfelt essays, inviting you to weave prose that mirrors the depth of your passion for cherished reads",
+        "Built a website which is equipped with 4+ features designed to store, manage and upload books for sale....",
     },
     {
       id: 2,
       image: "/book store (1).png",
       title: "Meme Generator",
       description:
-        "Discover the alchemy of words as you embark on a journey through‘Express Your Book Love.’ This guide unveils the art of crafting heartfelt essays, inviting you to weave prose that mirrors the depth of your passion for cherished reads",
+        "Developed a web-based Meme Generator allowing users to create custom memes by....",
     },
     {
       id: 3,
       image: "/Payment Gateway Integration.png",
-      title: "donation",
+      title: "Payment Gateway ",
       description:
-        "Discover the alchemy of words as you embark on a journey through‘Express Your Book Love.’ This guide unveils the art of crafting heartfelt essays, inviting you to weave prose that mirrors the depth of your passion for cherished reads",
+        "Developed a web application using with HTML, CSS from scratch as the part of The....",
     },
     {
       id: 4,
       image: "/my travel journal.png",
-      title: "Book Store",
-      description:
-        "Discover the alchemy of words as you embark on a journey through‘Express Your Book Love.’ This guide unveils the art of crafting heartfelt essays, inviting you to weave prose that mirrors the depth of your passion for cherished reads",
+      title: "My Travel Journal",
+      description: "It is a static website that I....",
     },
   ];
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mt-0">
       <div className="flex flex-col md:flex-row">
         <div className="flex md:ml-10 mt-3.5 md:mt-0">
           <Image
@@ -47,9 +46,14 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col md:ml-4 mt-5 md:mt-0">
-          <div className="text-3xl mt-10 md:text-5xl md:mt-20 sm:text-3xl">
-            Hey, this is Himanshi Sharma, a full stack developer currently
-            pursuing B.Tech at GGSPIU
+          <div className="text-3xl mt-10 md:text-5xl md:mt-20 sm:text-3xl italic font-mono">
+            Hey!!, I am{" "}
+            <span className="font-bold text-gray-500">Himanshi Sharma</span>,
+            currently pursuing my B.Tech at GGSPIU. I am aspiring to become a{" "}
+            <span className="font-bold text-gray-500">
+              full-stack developer
+            </span>
+            .
           </div>
           <div className="mt-10">
             <Link
@@ -62,7 +66,9 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-28 px-4 lg:px-24">
-        <h1 className="text-5xl font-bold text-center">Projects</h1>
+        <h1 className="text-7xl font-bold text-center italic font-mono text-gray-500">
+          Projects
+        </h1>
         <div className="grid gap-20 my-12 lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 grid-cols-1">
           {projects.map((project, id) => (
             <Link href={`/projects/${project.id}`} key={project.id}>
@@ -76,11 +82,15 @@ export default function Home() {
                   width={500}
                   height={300}
                 />
-                <h6 className="font-bold">{project.title}</h6>
-                <hr />
+                <h6 className="font-bold font-serif text-gray-500 italic text-3xl">
+                  {project.title}
+                </h6>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
                   {project.description}
                 </p>
+                <h1 className="italic font-mono text-1xl font-bold text-gray-500">
+                  Wanna know more? Click on the project
+                </h1>
               </Card>
             </Link>
           ))}
