@@ -4,7 +4,7 @@ import Link from "next/link";
 const details = [
   {
     id: 1,
-    image: "/book store.png",
+    image: "/bookD.png",
     colorClass: "bg-blue-500",
     title: "Book Store",
     tools: "Reactjs, Vitejs",
@@ -14,7 +14,7 @@ const details = [
   },
   {
     id: 2,
-    image: "/book store (1).png",
+    image: "/memeD.jpg",
     colorClass: "bg-green-500",
     title: "Meme Generator",
     tools: "Reactjs, Rest API",
@@ -24,7 +24,7 @@ const details = [
   },
   {
     id: 3,
-    image: "/Payment Gateway Integration.png",
+    image: "/paymentD.png",
     colorClass: "bg-gray-500",
     title: "donation",
     tools: "HTML, CSS, Javascript",
@@ -34,10 +34,10 @@ const details = [
   },
   {
     id: 4,
-    image: "/my travel journal.png",
+    image: "/travelD.jpeg",
     colorClass: "bg-pink-500",
 
-    title: "Travel Journal",
+    title: "My Travel Journal",
     tools: "Reactjs, React Props Learning",
     timeline: "April, 2023",
 
@@ -50,28 +50,18 @@ function ProjectDetail({ params }) {
   const detail = details.find((d) => d.id == params.id);
   return (
     <div className="flex flex-col justify-between min-h-screen mt-6 mx-10">
-      <div className="flex md:ml-10 mt-3.5 md:mt-0 ">
-        <Image
-          src={
-            "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600"
-          }
-          width={400}
-          height={400}
-        />
-        <Image
-          src={
-            "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600"
-          }
-          width={400}
-          height={400}
-        />
-        <Image
-          src={
-            "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=600"
-          }
-          width={500}
-          height={400}
-        />
+      <div className="flex flex-row gap-20 md:ml-10 mt-3.5 md:mt-0">
+        <div>
+          <h1 className="text-7xl mt-20 ml-20">{detail.title}</h1>
+        </div>
+        <div className="ml-20">
+          <Image
+            src={detail.image}
+            width={500}
+            height={500} // Adjust the height as needed
+            className="bg-cover bg-center w-full top-0 left-0 mt-0"
+          />
+        </div>
       </div>
       <div className="flex flex-row gap-40 mt-10">
         <div className="flex flex-col">

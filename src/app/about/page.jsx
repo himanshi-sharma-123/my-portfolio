@@ -38,16 +38,11 @@ function About() {
   ];
   return (
     <div>
-      <div className="flex flex-row mt-10">
-        <div className="ml-20">
-          <Image
-            src="https://images.pexels.com/photos/5622403/pexels-photo-5622403.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="my-image"
-            width={5000}
-            height={5000}
-          />
+      <div className="flex flex-row">
+        <div className="ml-40 mt-10">
+          <Image src="/me.png" alt="my-image" width={5000} height={3000} />
         </div>
-        <div className="px-10 ml-40">
+        <div className="px-10 ml-40 mt-10">
           <div className="ml-10">
             <h1>Fun Facts about me</h1>
           </div>
@@ -89,28 +84,24 @@ function About() {
               <h1 className="text-3xl">{internship.firm}</h1>
               <h1 className="text-1xl mt-4">{internship.title}</h1>
               <h1>{internship.timeline}</h1>
-              <h1 className="text-left grid grid-cols-1 gap-6 sm:grid-cols-2 mt-7">
-                {internship.first}
-              </h1>
-              <h1 className="text-left grid grid-cols-1 gap-6 sm:grid-cols-2 mt-7">
-                {internship.second}
-              </h1>
-              <h1 className="text-left grid grid-cols-1 gap-6 sm:grid-cols-2 mt-7">
-                {internship.third}
-              </h1>
+              <h1 className="text-left">{internship.first}</h1>
+              <h1 className="text-left">{internship.second}</h1>
+              <h1 className="text-left">{internship.third}</h1>
             </div>
           ))}
         </div>
-        <div className="">
-          <Image
-            src="https://images.pexels.com/photos/5622403/pexels-photo-5622403.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="my-image"
-            width={1000}
-            height={1000}
-          />
+        <div className="mr-40 ml-40 mt-10">
+          <Image src="/intern.png" alt="my-image" width={1000} height={1000} />
         </div>
       </div>
-      <div></div>
+      <div>
+        <Image
+          src="/memory.jpeg"
+          width={1300}
+          height={1300}
+          className="ml-20"
+        />
+      </div>
     </div>
   );
 }
