@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -7,9 +8,9 @@ function Navbar() {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className=" flex flex-col md:flex-row w-full md:h-[80px] justify-between items-center px-4">
+    <div className="flex flex-col md:flex-row w-full md:h-[80px] justify-between items-center px-4">
       <div className="font-bold text-7xl font-mono mb-4 md:mb-0">
-        <Link href="/">hs</Link>
+        <Image src="/logo.png" width={150} height={150} />
       </div>
       <div
         className={`md:flex flex-col md:flex-row ml-auto ${

@@ -39,7 +39,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row">
         <div className="flex md:ml-10 mt-3.5 md:mt-0">
           <Image
-            src={"/hero.avif"}
+            src={"/hero.png"}
             width={2000}
             height={2000}
             alt="image"
