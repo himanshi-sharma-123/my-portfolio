@@ -47,10 +47,29 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:ml-4 mt-5 md:mt-0">
           <div className="text-3xl mt-10 md:text-5xl md:mt-20 sm:text-3xl italic font-mono">
+            {/* <div
+            className="relative text-3xl mt-10 md:text-5xl md:mt-20 sm:text-3xl italic font-mono
+before:absolute before:inset-0 before:animate-typewriter
+before:bg-white
+after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
+after:bg-black"
+          > */}
             Hey!!, I am{" "}
-            <span className="font-bold text-gray-500">Himanshi Sharma</span>,
-            currently pursuing my B.Tech at GGSPIU. I am aspiring to become a{" "}
-            <span className="font-bold text-gray-500">
+            <span
+              className="font-bold text-gray-500 relative before:absolute before:inset-0 before:animate-typewriter
+before:bg-white
+after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
+"
+            >
+              Himanshi Sharma
+            </span>
+            , currently pursuing my B.Tech at GGSPIU. I am aspiring to become a{" "}
+            <span
+              className="font-bold text-gray-500 relative before:absolute before:inset-0 before:animate-typewriter
+before:bg-white
+after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
+"
+            >
               full-stack developer
             </span>
             .
@@ -73,7 +92,7 @@ export default function Home() {
           {projects.map((project, id) => (
             <Link href={`/projects/${project.id}`} key={project.id}>
               <Card
-                className="w-full hover:scale-110 duration-500 cursor-pointer"
+                className="w-full hover:scale-110 duration-500 cursor-pointer "
                 key={project.id}
               >
                 <Image
