@@ -40,53 +40,89 @@ function About() {
     <div>
       <div className="flex flex-row">
         <div className="ml-40 mt-10">
-          <Image src="/me.png" alt="my-image" width={5000} height={3000} />
+          <Image src="/me.png" alt="my-image" width={2000} height={3000} />
         </div>
-        <div className="px-10 ml-40 mt-10">
+        <div className="px-10 ml-20 mt-10">
           <div className="ml-10">
-            <h1>Fun Facts about me</h1>
+            <h1 className="font-mono italic text-5xl font-bold ">
+              Fun Facts about me...
+            </h1>
           </div>
-          <div className="ml-10">
-            <p className="">
+          <div className="ml-10 mt-8">
+            <p className="font-mono">
               I have gained a comprehensive understanding of Software
               Engineering principles, Data Structures and Algorithms,
               Programming languages like Java, Azure Fundamentals Certified.
-              Currently pursuing B. Tech in CSE from GGSIPU. Here are few key
-              points I want to share: Technical Proficiency: I have a solid
-              foundation in both frontend and backend development technologies.
-              I am proficient in languages such as HTML, CSS, Javascript, and
-              have experience with popular front-end frameworks like React and
-              Redux. On the backend, I have worked with languages like Nodejs,
-              Express.js and have experience with databases such as MongoDB. I
-              am also familiar with version control systems like Git. Project
-              Experience: I have had the opportunity to work on various web
-              development projects during my academic studies and personal
-              projects. These experiences have allowed me to apply my technical
-              knowledge to real-world scenarios and have honed my
-              problem-solving skills. Collaborative Approach: I value
-              collaboration and communication within a team. I believe that
-              effective teamwork is crucial to building successful software
-              products, and I am eager to work closely with colleagues to
-              achieve common goals. Passion for Innovation: I am not only
-              interested in coding but also in the creative aspects of web
-              development. I enjoy finding innovative solutions to complex
-              problems and creating user-friendly interfaces that enhance the
-              user experience.
+              <p className="mt-5">
+                <h1 className="text-1xl font-bold font-mono">
+                  Here are few key points I want to share:
+                </h1>
+                <ul className="mt-5">
+                  <li className="font-mono">
+                    <span className="font-bold font-mono">
+                      Technical Proficiency:{" "}
+                    </span>
+                    I have a solid foundation in both frontend and backend
+                    development technologies. I am proficient in languages such
+                    as HTML, CSS, Javascript, and have experience with popular
+                    front-end frameworks like React and Redux. On the backend, I
+                    have worked with languages like Nodejs, Express.js and have
+                    experience with databases such as MongoDB. I am also
+                    familiar with version control systems like Git.{" "}
+                  </li>
+                  <li className="mt-5 font-mono">
+                    <span className="font-bold font-mono">
+                      Project Experience:{" "}
+                    </span>
+                    I have had the opportunity to work on various web
+                    development projects during my academic studies and personal
+                    projects. These experiences have allowed me to apply my
+                    technical knowledge to real-world scenarios and have honed
+                    my problem-solving skills.
+                  </li>{" "}
+                  <li className="mt-5 font-mono">
+                    <span className="font-bold font-mono">
+                      Collaborative Approach:{" "}
+                    </span>
+                    I value collaboration and communication within a team. I
+                    believe that effective teamwork is crucial to building
+                    successful software products, and I am eager to work closely
+                    with colleagues to achieve common goals.
+                  </li>
+                  <li className="mt-5 font-mono">
+                    <span className="font-bold font-mono">
+                      Passion for Innovation:{" "}
+                    </span>
+                    I am not only interested in coding but also in the creative
+                    aspects of web development. I enjoy finding innovative
+                    solutions to complex problems and creating user-friendly
+                    interfaces that enhance the user experience.
+                  </li>
+                </ul>
+              </p>
             </p>
           </div>
         </div>
       </div>
       <div className="flex flex-row mt-10 ml-20">
         <div>
-          <h1 className="text-5xl font-bold">Internships</h1>
+          <h1 className="text-5xl font-bold font-mono itlatic text-gray-500">
+            Internships
+          </h1>
           {internships.map((internship, id) => (
             <div key={id} className="mt-10">
-              <h1 className="text-3xl">{internship.firm}</h1>
-              <h1 className="text-1xl mt-4">{internship.title}</h1>
-              <h1>{internship.timeline}</h1>
-              <h1 className="text-left">{internship.first}</h1>
-              <h1 className="text-left">{internship.second}</h1>
-              <h1 className="text-left">{internship.third}</h1>
+              <h1 className="text-3xl font-mono font-bold">
+                {internship.firm}
+              </h1>
+              <h1 className=" mt-4 font-mono font-bold text-gray-500">
+                {internship.title}
+              </h1>
+              <h1 className="font-mono font-bold text-gray-500">
+                {internship.timeline}
+              </h1>
+              <h1 className="text-left font-mono">{internship.first}</h1>
+              <h1 className="text-left font-mono">{internship.second}</h1>
+              <h1 className="text-left font-mono">{internship.third}</h1>
             </div>
           ))}
         </div>
