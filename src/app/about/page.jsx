@@ -50,17 +50,17 @@ function About() {
           </div>
           <div className="ml-10 mt-8">
             <div className="font-mono">
-              I have gained a comprehensive understanding of Software
+              😊I have gained a comprehensive understanding of Software
               Engineering principles, Data Structures and Algorithms,
               Programming languages like Java, Azure Fundamentals Certified.
               <div className="mt-5">
                 <h1 className="text-1xl font-bold font-mono">
-                  Here are few key points I want to share:
+                  💡Here are few key points I want to share:
                 </h1>
                 <ul className="mt-5">
                   <li className="font-mono">
                     <span className="font-bold font-mono">
-                      Technical Proficiency:{" "}
+                      🌴Technical Proficiency:{" "}
                     </span>
                     I have a solid foundation in both frontend and backend
                     development technologies. I am proficient in languages such
@@ -72,7 +72,7 @@ function About() {
                   </li>
                   <li className="mt-5 font-mono">
                     <span className="font-bold font-mono">
-                      Project Experience:{" "}
+                      🍵Project Experience:{" "}
                     </span>
                     I have had the opportunity to work on various web
                     development projects during my academic studies and personal
@@ -82,7 +82,7 @@ function About() {
                   </li>{" "}
                   <li className="mt-5 font-mono">
                     <span className="font-bold font-mono">
-                      Collaborative Approach:{" "}
+                      🤝Collaborative Approach:{" "}
                     </span>
                     I value collaboration and communication within a team. I
                     believe that effective teamwork is crucial to building
@@ -91,7 +91,7 @@ function About() {
                   </li>
                   <li className="mt-5 font-mono">
                     <span className="font-bold font-mono">
-                      Passion for Innovation:{" "}
+                      🌺Passion for Innovation:{" "}
                     </span>
                     I am not only interested in coding but also in the creative
                     aspects of web development. I enjoy finding innovative
@@ -110,15 +110,15 @@ function About() {
             Internships
           </h1>
           {internships.map((internship, id) => (
-            <div key={id} className="mt-10">
+            <div key={id} className="mt-10 item-center">
               <h1 className="text-3xl font-mono font-bold">
                 {internship.firm}
               </h1>
               <h1 className=" mt-4 font-mono font-bold text-gray-500">
-                {internship.title}
+                ➡️{internship.title}
               </h1>
               <h1 className="font-mono font-bold text-gray-500">
-                {internship.timeline}
+                🕛{internship.timeline}
               </h1>
               <h1 className="text-left font-mono">{internship.first}</h1>
               <h1 className="text-left font-mono">{internship.second}</h1>

@@ -61,7 +61,7 @@ before:bg-white
 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
 "
             >
-              Himanshi Sharma
+              Himanshi Sharma👋
             </span>
             , currently pursuing my B.Tech at GGSPIU. I am aspiring to become a{" "}
             <span
@@ -70,7 +70,7 @@ before:bg-white
 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
 "
             >
-              full-stack developer
+              full-stack developer💻
             </span>
             .
           </div>
@@ -85,9 +85,10 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
         </div>
       </div>
       <div className="mt-28 px-4 lg:px-24">
-        <h1 className="text-7xl font-bold text-center italic font-mono text-gray-500">
-          Projects
+        <h1 className="text-7xl font-bold text-center font-mono text-gray-500">
+          Projects👩‍💻
         </h1>
+
         <div className="grid gap-20 my-12 lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 grid-cols-1">
           {projects.map((project, id) => (
             <Link href={`/projects/${project.id}`} key={project.id}>

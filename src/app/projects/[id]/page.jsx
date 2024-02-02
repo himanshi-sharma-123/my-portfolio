@@ -74,11 +74,11 @@ function ProjectDetail({ params }) {
       </div>
       <div className="flex flex-col md:flex-row gap-5 md:gap-40 mt-10">
         <div className="flex flex-col">
-          <h1 className="text-3xl font-bold">Tools</h1>
+          <h1 className="text-3xl font-bold">🧰Tools</h1>
           <h2 className="text-1xl text-gray-500 font-bold">{detail.tools}</h2>
         </div>
         <div className="mt-5 md:mt-0">
-          <h1 className="text-3xl font-bold">Timeline</h1>
+          <h1 className="text-3xl font-bold">🕛Timeline</h1>
           <h2 className="text-1xl text-gray-500 font-bold">
             {detail.timeline}
           </h2>
@@ -106,7 +106,7 @@ function ProjectDetail({ params }) {
       </div>
 
       <div>
-        <h1 className="text-3xl mt-20 font-bold">Brief</h1>
+        <h1 className="text-3xl mt-20 font-bold">🌴Brief</h1>
         <p className="text-left grid grid-cols-1 gap-6 sm:grid-cols-2 mt-7 ">
           {detail.description}
         </p>
