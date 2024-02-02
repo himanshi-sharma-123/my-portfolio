@@ -77,7 +77,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
           <div className="mt-10">
             <Link
               href="/"
-              className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-4 px-6 rounded-full"
+              className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-4 px-6 rounded-full cursor-custom"
             >
               Wanna chat?
             </Link>
