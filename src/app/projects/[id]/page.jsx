@@ -12,6 +12,7 @@ const details = [
     timeline: "Dec 7 - 11, 2023",
     description:
       "Built a website which is equipped with 4+ features designed to store, manage and upload books for sale. The functionalities encompass user authentication through Firebase for login and signup, complemented by a chatbot for engaging user interactions. Incorporating modules for book inventory, this system facilitates tracking of available books and customer profiles. By utilizing this computerized setup, it mitigates the risk of losing book or customer records, a common occurrence in non-computerized systems.",
+    video: "/bookV.mp4",
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ const details = [
     timeline: "April, 2023",
     description:
       "Developed a web-based Meme Generator allowing users to create custom memes by combining text and images, utilizing an API with access to a diverse library of 100+ images.",
+    video: "/memeV.mp4",
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const details = [
     timeline: "May - June, 2023",
     description:
       " Developed a web application using with HTML, CSS from scratch as the part of The Sparks Foundation Internship by using Razorpay as a Payment Integration",
+    video: "/paymentV.mp4",
   },
   {
     id: 4,
@@ -43,9 +46,9 @@ const details = [
     textC: "orange-500",
     tools: "Reactjs, React Props Learning",
     timeline: "April, 2023",
-
     description:
       "It is a static website that I built to learn Reactjs and props",
+    video: "/travelV.mp4",
   },
 ];
 
@@ -117,7 +120,7 @@ function ProjectDetail({ params }) {
             height="250"
             className="ml-20 mt-10 md:mt-0 md:ml-0 self-center md:self-auto"
           >
-            <source src="/1.mp4" type="video/mp4" />
+            <source src={detail.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
