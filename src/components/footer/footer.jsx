@@ -44,7 +44,10 @@ function footer() {
           <a href="https://www.linkedin.com/in/himanshi-sharma-564548202/">
             <FaLinkedin size={30} />
           </a>
-          <a href="https://drive.google.com/file/d/1uqP0pIHX-zpKP3_TM9t2nibr8OE3DLu-/view?usp=sharing">
+          <a
+            href="https://drive.google.com/file/d/1jNGuXMPaD3UdQxZhctiyJiV4hYSfACTx/view?usp=sharing"
+            target="_blank"
+          >
             <BsFillPersonLinesFill size={30} />
           </a>
           <a href="https://twitter.com/Himansh93626788?t=58ZIeC6a4E-MQ0Y3rBpHCQ&s=09">

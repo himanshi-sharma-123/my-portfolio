@@ -30,7 +30,8 @@ function Navbar() {
           About
         </Link>
         <Link
-          href="/"
+          href="https://drive.google.com/file/d/1jNGuXMPaD3UdQxZhctiyJiV4hYSfACTx/view?usp=sharing"
+          target="_blank"
           className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full cursor-custom"
         >
           Resume

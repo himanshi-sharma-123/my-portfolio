@@ -83,7 +83,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
               href="https://www.linkedin.com/in/himanshi-sharma-564548202/"
               className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-4 px-6 rounded-full cursor-custom font-mono italic"
             >
-              Lets connect
+              Lets connect🙌
             </Link>
           </div>
         </div>
