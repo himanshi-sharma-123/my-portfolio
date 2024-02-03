@@ -6,24 +6,6 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 function footer() {
-  const links = [
-    {
-      id: 1,
-      title: "Linkedin",
-      url: "/",
-    },
-    {
-      id: 2,
-      title: "Twitter",
-      url: "/",
-    },
-    {
-      id: 3,
-      title: "Github",
-      url: "/",
-    },
-  ];
-
   return (
     <div className="w-full h-full bg-black mx-aut0 py-16 px-20 grid lg:grid-cols-3 gap-8 text-gray-300 mt-10">
       <div>
