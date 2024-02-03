@@ -106,15 +106,28 @@ function ProjectDetail({ params }) {
       </div>
 
       <div>
-        <h1 className="text-3xl mt-20 font-bold">🌴Brief</h1>
-        <p className="text-left grid grid-cols-1 gap-6 sm:grid-cols-2 mt-7 ">
-          {detail.description}
-        </p>
+        <div className="flex flex-col md:flex-row justify-between">
+          <div>
+            <h1 className="text-3xl mt-20 font-bold">🌴Brief</h1>
+            <p className="mt-7 ml-7">{detail.description}</p>
+          </div>
+          <video
+            controls
+            width="500"
+            height="250"
+            className="ml-20 mt-10 md:mt-0 md:ml-0 self-center md:self-auto"
+          >
+            <source src="/1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   );
 }
 export default ProjectDetail;
+
+// <p className="text-left grid grid-cols-1 gap-6 sm:grid-cols-2 mt-7 ">
 
 // import Image from "next/image";
 // import Link from "next/link";
