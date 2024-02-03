@@ -81,6 +81,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
           <div className="mt-10">
             <Link
               href="https://www.linkedin.com/in/himanshi-sharma-564548202/"
+              target="_blank"
               className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-4 px-6 rounded-full cursor-custom font-mono italic"
             >
               Lets connect🙌
@@ -93,7 +94,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
           Projects👩‍💻
         </h1>
 
-        <div className="grid gap-20 my-12 lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 grid-cols-1">
+        <div className="grid gap-20 my-12 lg:grid-cols-2 sm:grid-cols-1 md:grid-cols-2 grid-cols-1">
           {projects.map((project, id) => (
             <Link href={`/projects/${project.id}`} key={project.id}>
               <Card
