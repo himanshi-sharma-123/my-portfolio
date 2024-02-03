@@ -7,30 +7,34 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      image: "/book store.png",
+      image: "/bookS.png",
       title: "Book Store",
       description:
         "Built a website which is equipped with 4+ features designed to store, manage and upload books for sale....",
+      emoji: "📚",
     },
     {
       id: 2,
-      image: "/book store (1).png",
+      image: "/memeG.png",
       title: "Meme Generator",
       description:
         "Developed a web-based Meme Generator allowing users to create custom memes by....",
+      emoji: "😂",
     },
     {
       id: 3,
-      image: "/Payment Gateway Integration.png",
+      image: "/paymentG.png",
       title: "Payment Gateway ",
       description:
         "Developed a web application using with HTML, CSS from scratch as the part of The....",
+      emoji: "🔶🔶",
     },
     {
       id: 4,
-      image: "/my travel journal.png",
+      image: "/travelJ.png",
       title: "My Travel Journal",
       description: "It is a static website that I....",
+      emoji: "🌏",
     },
   ];
   return (
@@ -93,17 +97,48 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
           {projects.map((project, id) => (
             <Link href={`/projects/${project.id}`} key={project.id}>
               <Card
-                className="w-full hover:scale-110 duration-500 cursor-pointer "
+                className="w-full hover:scale-110 duration-500 cursor-pointer border-black border-2 rounded-lg flex flex-col"
+                key={project.id}
+                style={{ height: "100%" }}
+              >
+                <div className="flex-grow">
+                  <Image
+                    src={project.image}
+                    alt="book store"
+                    width={700}
+                    height={300}
+                    className="py-10 px-10 border-black border-b-2 rounded-t-lg"
+                  />
+                  <h6 className="font-bold font-mono italic text-4xl ml-20 truncate">
+                    {project.title}
+                    {project.emoji}
+                  </h6>
+                </div>
+                <h1 className="italic font-mono text-1xl font-bold text-gray-500 p-4 rounded-b-lg bg-gray-100">
+                  Wanna know about it? Click on the project...
+                </h1>
+              </Card>
+            </Link>
+          ))}
+        </div>
+
+        {/* <div className="grid gap-20 my-12 lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 grid-cols-1">
+          {projects.map((project, id) => (
+            <Link href={`/projects/${project.id}`} key={project.id}>
+              <Card
+                className="w-full hover:scale-110 duration-500 cursor-pointer border-black border-2 rounded-lg"
                 key={project.id}
               >
                 <Image
                   src={project.image}
                   alt="book store"
-                  width={500}
+                  width={700}
                   height={300}
+                  className="py-10 px-10 border-black border-2 rounded-lg"
                 />
-                <h6 className="font-bold font-serif text-gray-500 italic text-3xl">
+                <h6 className="font-bold font-mono italic text-4xl ml-20">
                   {project.title}
+                  {project.emoji}
                 </h6>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
                   {project.description}
@@ -114,7 +149,7 @@ after:absolute after:inset-0 after:w-[0.125em] after:animate-caret
               </Card>
             </Link>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
