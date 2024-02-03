@@ -13,6 +13,8 @@ const details = [
     description:
       "Built a website which is equipped with 4+ features designed to store, manage and upload books for sale. The functionalities encompass user authentication through Firebase for login and signup, complemented by a chatbot for engaging user interactions. Incorporating modules for book inventory, this system facilitates tracking of available books and customer profiles. By utilizing this computerized setup, it mitigates the risk of losing book or customer records, a common occurrence in non-computerized systems.",
     video: "/bookV.mp4",
+    github: "https://github.com/himanshi-sharma-123/Book-Store",
+    live: "https://books-web-store.netlify.app/",
   },
   {
     id: 2,
@@ -25,6 +27,8 @@ const details = [
     description:
       "Developed a web-based Meme Generator allowing users to create custom memes by combining text and images, utilizing an API with access to a diverse library of 100+ images.",
     video: "/memeV.mp4",
+    github: "https://github.com/himanshi-sharma-123/meme-generator",
+    live: "https://meme-generator-flax-delta.vercel.app/",
   },
   {
     id: 3,
@@ -37,6 +41,8 @@ const details = [
     description:
       " Developed a web application using with HTML, CSS from scratch as the part of The Sparks Foundation Internship by using Razorpay as a Payment Integration",
     video: "/paymentV.mp4",
+    github: "https://github.com/himanshi-sharma-123/Payment-Integration",
+    live: "https://payment-integration-gateway.netlify.app/",
   },
   {
     id: 4,
@@ -49,6 +55,8 @@ const details = [
     description:
       "It is a static website that I built to learn Reactjs and props",
     video: "/travelV.mp4",
+    github: "https://github.com/himanshi-sharma-123/travel-journal",
+    live: "https://himanshi-sharma-mytraveljournal.netlify.app/",
   },
 ];
 
@@ -88,23 +96,23 @@ function ProjectDetail({ params }) {
         </div>
         <div className="mt-5 md:mt-0 flex flex-row gap-10">
           <Link
-            href="/"
+            href={detail.github}
             className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 cursor-custom block"
           >
             Github
           </Link>
           <Link
-            href="/"
+            href={detail.live}
             className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 cursor-custom block"
           >
             Live Site
           </Link>
-          <Link
+          {/* <Link
             href="/"
             className="bg-white border-2 border-black hover:bg-black hover:text-white hover:border-white py-3 px-8 rounded-full mb-2 md:mb-0 cursor-custom block"
           >
             Demo Video
-          </Link>
+          </Link> */}
         </div>
       </div>
 

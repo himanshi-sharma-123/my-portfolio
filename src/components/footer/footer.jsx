@@ -32,7 +32,7 @@ function footer() {
         </h1>
         <p1 className="py-4">
           Got Questions,comments or any feedback? Feel free to reach out and
-          comtact me on my socials below.
+          contact me on my socials below.
           {/* Let me know your views through the contact form or drop me a message
           on my socials mentioned below. */}
         </p1>
@@ -73,14 +73,14 @@ function footer() {
               {" "}
               <Link href="/about">About</Link>
             </li>
-            <li className="py-2 text-sm">
+            {/* <li className="py-2 text-sm">
               {" "}
               <Link href="/">Skills</Link>
-            </li>
-            <li className="py-2 text-sm">
+            </li> */}
+            {/* <li className="py-2 text-sm">
               {" "}
               <Link href="/">Resume</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div>
